@@ -158,7 +158,9 @@ header h1 {
   width: 100%;
 }
 .Qtext{
-  width: 100%;  
+  width: 100%;
+  color: white;
+  font-size: large;
 }
 
 .Style-left-2 {
