@@ -1,9 +1,16 @@
-import QuestionTimer from "./QuestionTimer";
 import Answers from "./Answers";
 import { useState } from "react";
 import { CountdownCircleTimer } from "react-countdown-circle-timer";
 import Button from "react-bootstrap/Button";
 import { HorizontalRule } from "@mui/icons-material";
+
+const renderTime = ({ remainingTime }) => {
+  return (
+    <div className="timerq">
+      <div className="valueq">{remainingTime}</div>
+    </div>
+  );
+};
 
 const getPlusMinusQuestion = () => {
   //get the question
@@ -184,9 +191,11 @@ export default function MathQuestion({
                 currAnswer.selectedAnswer === "" ? onSkipAnswer : null
               }
             >
-              {({ remainingTime, color }) => (
+                        {renderTime}
+
+              {/* {({ remainingTime, color }) => (
                 <span style={{ color }}>{remainingTime}</span>
-              )}{" "}
+              )}{" "} */}
             </CountdownCircleTimer>
           </div>
           <div class="Qtext">

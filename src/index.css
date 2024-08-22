@@ -162,6 +162,18 @@ header h1 {
   color: white;
   font-size: large;
 }
+.timerq {
+  font-family: "Montserrat";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.valueq {
+  font-size: 25px;
+  color: #a0e90e;
+
+}
 
 .Style-left-2 {
   width: 100%;

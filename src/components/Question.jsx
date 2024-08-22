@@ -1,4 +1,3 @@
-import QuestionTimer from "./QuestionTimer";
 import Answers from "./Answers";
 import { useState } from "react";
 import QUESTIONS from '../questions.js';
